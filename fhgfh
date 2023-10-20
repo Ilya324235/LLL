@@ -15,7 +15,7 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send(f'Привет! Я бот {bot.user}!')
+    await ctx.send(f'Привет! Я бот!')
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
@@ -89,3 +89,31 @@ async def fox(ctx):
     image_url = get_fox_image_url()
     await ctx.send(image_url)
 
+@bot.command(name='tips')
+async def bot(ctx):
+    await ctx.send(':seedling:**Сохранение природы** :seedling: является крайне важным аспектом нашей жизни, поскольку от нее зависит наше благосостояние, здоровье и даже выживание на планете. Природа предоставляет нам не только жизненно важные ресурсы, такие как чистый воздух, питьевая вода и продовольствие, но и играет ключевую роль в поддержании биологического разнообразия, которое обеспечивает устойчивость экосистем. Очень важно понимать, что наши действия влияют на природу, и сохранение ее в целостности является залогом не только благополучия текущего поколения, но и будущих поколений. В ответе нашей заботы и ответственности за природу заключается обеспечение устойчивого и здорового будущего для всего живого на Земле.')
+    with open('images/lap.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+    await ctx.send(':electric_plug:**Экономь энергию**:zap:\n 1) Используй энергоэффективные лампочки. \n 2) Выключай свет, когда он не нужен.\n 3) Отключай бытовую технику от сети, когда она не используется.')
+    with open('images/lap.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+    await ctx.send(':recycle:**Отказ от пластиковых бутылок**:recycle:: \n 1) Используй многоразовые бутылки для воды. \n 2) Вместо пластиковых бутылок выбирай напитки в стекле или бумажных упаковках.\n 3) Использу бутылки по нескольу раз.')
+    with open('images/lap.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+    await ctx.send('**Помни**, что деревья играют важную роль в поддержании экологического баланса, и твои усилия по их посадке вносят вклад в сохранение природы.')
+    with open('images/lap.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+    await ctx.send('**Открывай**:park:для себя волшебство местной флоры и фауны :deciduous_tree:. Посещай национальные парки, резерваты и ботанические сады. Это поможет тебе ценить красоту и уникальность местной природы, а также содействовать ее сохранению.')
+    with open('images/lap.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+    await ctx.send('**Сокращай**:earth_americas:использование химических удобрений и пестицидов. Выбирай экологически безопасные методы земледелия и садоводства. Твои действия по устранению токсинов из окружающей среды будут способствовать сохранению здоровья почвы и водных источников.')
+    with open('images/ggh.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+
+bot.run("")
